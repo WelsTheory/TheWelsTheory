@@ -1416,3 +1416,62 @@ a{
 	.col2 textarea{
 		width: 90%
 	}
+}
+
+@media screen and (max-width: 370px){
+
+	/* PORTADA */
+	.contenedor{
+		max-width: 310px;
+	}
+
+	.titulo{
+		width: 294px; 
+	}
+
+	.imagen img{
+		width: 310px;
+	}
+
+	/* ARTICULOS */
+	.articulos{
+		max-width: 310px;
+	}
+
+	.post img{
+		width: 140px;
+	}
+
+	.pie-post{
+		width: 140px;
+	}
+
+	/* PUBLICACION */
+	.titulo-c{
+		width: 310px;
+	}
+
+	.publicacion-fin{
+		width: 310px;
+	}
+
+	/* PROYECTOS */
+	.contenedor-a{
+		max-width: 310px;
+	}
+
+	/* NOSOTROS */
+	.titulo-nosotros{
+		width: 310px;
+		font-size: 29px;
+	}
+
+	.parrafo-nosotros{
+		width: 310px;
+	}
+
+	/* CONTACTO */
+	.contenedor-contacto{
+		width: 310px;
+	}
+}
