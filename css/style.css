@@ -1331,7 +1331,7 @@ a{
 
 	/* FOOTER */
 	.footer p{
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	/* PUBLICACION */
@@ -1354,11 +1354,27 @@ a{
 	}
 
 	.publicacion-footer{
-		width: 172px;
+		width: 129px;
+	}
+
+	.publicacion-footer h3{
+		font-size: 13px;
+	}
+
+	.publicacion-footer p{
+		font-size: 13px;
 	}
 
 	.publicacion-autor{
-		width: 175px;
+		width: 132px;
+	}
+
+	.publicacion-autor h3{
+		font-size: 13px;
+	}
+
+	.publicacion-autor a{
+		font-size: 13px;
 	}
 
 	/* PROYECTOS */
@@ -1453,6 +1469,17 @@ a{
 
 	.publicacion-fin{
 		width: 310px;
+	}
+
+	.imagen-pu{
+		max-height: 66px;
+		min-height: 88px;
+	}
+
+	.post-publicacion h1{
+		font-size: 21px;
+		top: 128px;
+		left: -23px; 
 	}
 
 	/* PROYECTOS */
