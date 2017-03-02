@@ -1275,6 +1275,63 @@ a{
 		font-size: 19px;
 		height: 25px;
 	}
+
+	/* PORTADA */
+	.contenedor{
+		max-width: 380px;
+		max-height: 700px;
+	}
+
+	.titulo{
+		width: 364px;
+		top: 300px;
+	}
+
+	.title{
+		font-size: 20px;
+		margin: 6px 0 1px 0;
+	}
+
+	.parrafo{
+		font-size: 16px;
+	}
+
+	.imagen img{
+		width: 380px;
+		height: 300px;
+		top: -216px;
+	}
+
+	/* ARTICULOS */
+	.articulos{
+		max-width: 380px;
+    	max-height: 700px; 
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.post{
+		padding: 1.2em 0 1.2em 0;
+
+	}
+
+	.post img{
+		width: 180px;
+		height: 200px;
+	}
+
+	.pie-post{
+		width: 180px;
+		font-size: 10px;
+	}
+
+	.pie-post h3{
+		font-size: 14px;
+	}
+
+	.footer p{
+		font-size: 17px;
+	}
 	/* PUBLICACION */
 	.imagen-pu{
 		max-height: 90px;
@@ -1290,13 +1347,13 @@ a{
 	}
 
 	.publicacion-fin{
-		width: 420px;
+		width: 380px;
 		height: 50px;
 	}
 
 	/* PROYECTOS */
 	.contenedor-a{
-		max-width: 420px;
+		max-width: 380px;
 	}
 
 	.titulo-b p {
@@ -1317,7 +1374,7 @@ a{
 
 	/* NOSOTROS */
 	.parrafo-nosotros{
-		width: 420px;
+		width: 380px;
 	}
 
 	.autor-nosotros{
@@ -1326,7 +1383,7 @@ a{
 
 	/* CONTACTO */
 	.contenedor-contacto{
-		width: 450px;
+		width: 380px;
 	}
 
 	.col1 input{
@@ -1336,4 +1393,3 @@ a{
 	.col2 textarea{
 		width: 90%
 	}
-}
