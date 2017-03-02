@@ -1278,33 +1278,33 @@ a{
 
 	/* PORTADA */
 	.contenedor{
-		max-width: 380px;
+		max-width: 360px;
 		max-height: 700px;
 	}
 
 	.titulo{
-		width: 364px;
+		width: 344px;
 		top: 300px;
 	}
 
 	.title{
-		font-size: 20px;
+		font-size: 19px;
 		margin: 6px 0 1px 0;
 	}
 
 	.parrafo{
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	.imagen img{
-		width: 380px;
+		width: 360px;
 		height: 300px;
 		top: -216px;
 	}
 
 	/* ARTICULOS */
 	.articulos{
-		max-width: 380px;
+		max-width: 360px;
     	max-height: 700px; 
     	margin-left: auto;
     	margin-right: auto;
@@ -1329,9 +1329,11 @@ a{
 		font-size: 14px;
 	}
 
+	/* FOOTER */
 	.footer p{
-		font-size: 17px;
+		font-size: 15px;
 	}
+
 	/* PUBLICACION */
 	.imagen-pu{
 		max-height: 90px;
@@ -1343,17 +1345,25 @@ a{
 	}
 
 	.titulo-c{
-		width: 420px;
+		width: 400px;
 	}
 
 	.publicacion-fin{
-		width: 380px;
+		width: 400px;
 		height: 50px;
+	}
+
+	.publicacion-footer{
+		width: 172px;
+	}
+
+	.publicacion-autor{
+		width: 175px;
 	}
 
 	/* PROYECTOS */
 	.contenedor-a{
-		max-width: 380px;
+		max-width: 360px;
 	}
 
 	.titulo-b p {
@@ -1373,17 +1383,30 @@ a{
 	}
 
 	/* NOSOTROS */
+	.titulo-nosotros{
+		font-size: 35px;
+	}
+
 	.parrafo-nosotros{
-		width: 380px;
+		width: 360px;
+	}
+
+	.parrafo-nosotros p{
+		font-size: 14px;
 	}
 
 	.autor-nosotros{
-		margin-right: 18px;
+		margin-right: 40px;
+	}
+
+	.sociales-autor{
+		position: relative;
+		left: 45px;
 	}
 
 	/* CONTACTO */
 	.contenedor-contacto{
-		width: 380px;
+		width: 360px;
 	}
 
 	.col1 input{
