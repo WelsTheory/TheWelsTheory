@@ -503,7 +503,6 @@ a{
 }
 
 .imagen-autor img{
-	transform: rotate(90deg);
 	width: 250px;
 	height: 255px;
 	position: relative;
