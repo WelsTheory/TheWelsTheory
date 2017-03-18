@@ -56,7 +56,7 @@
 	 <section class="articulos">
 	 	<article class="post">
 			<a href="idea_del_millon.html">
-				<img src="imag/ideas.jpg" alt="" width="400px" height="320px">
+				<img data-src="imag/ideas.jpg" alt="Ideas" width="400px" height="320px">
 			</a>
 			<div class="pie-post">
 				<a href="idea_del_millon.html">
@@ -70,7 +70,7 @@
 		</article>
 	 	<article class="post">
 			<a href="organización.html">
-				<img src="imag/portada.jpg" alt="" width="400px" height="320px">
+				<img data-src="imag/portada.jpg" alt="Portada" width="400px" height="320px">
 			</a>
 			<div class="pie-post">
 				<a href="organización.html">
@@ -84,7 +84,7 @@
 		</article>	
 		<article class="post">
 			<a href="publicacion.html">
-				<img src="imag/fo1.jpg" alt="foto1" width="400px" height="320px">
+				<img data-src="imag/fo1.jpg" alt="Publicacion" width="400px" height="320px">
 			</a>
 			<div class="pie-post">
 				<a href="publicacion.html">
@@ -140,6 +140,13 @@
 
 	  });
 
+	</script>
+
+	<script>
+		// Lazy loading
+		var bLazy = new Blazy({
+    		selector: 'img'// options
+		});
 	</script>
 
 	    <!-- ANALYTICS -->
