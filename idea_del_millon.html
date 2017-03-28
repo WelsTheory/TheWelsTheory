@@ -4,39 +4,51 @@
 	<meta charset="UTF-8">
 	<title>Mi idea del millon!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <style>
-		body{background:#efefef;padding:0;margin:0;font-family:sans-serif}h1{font-family:'Gochi Hand',cursive}p{color:#1F5768;margin:0}
-    </style>
-	
 </head>
 <body>
 	
-	<!-- HEADER Y MENU  THE WELS THEORY-->
-
-	<header class="header">
-		<div class="header-1">
-			<a href="index.html"><span>The Wels Theory</span></a>
-		</div>
-	</header>
-	<div>
-		<ul class="menus">
-<!--       		<li><a href="proyectos.html">Proyectos</a></li>	
-		    <li><a href="portafolio.html">Portafolio</a></li> -->
-		    <li><a href="blog.html">Blog</a></li> 
-		    <li><a href="nosotros.html">Quien soy</a></li>
-<!-- 		    <li><a href="contacto.html">Contacto</a></li> -->
-		</ul>
-	</div>
+	<!-- PORTADA y MENU  THE WELS THEORY-->
+	<section class="portada head-publicacion" style="background-image: url(imag/ideas.png); background-size: cover; height:auto; max-height: 120px" id="header">
+		<header class="header">
+			<figure class="logotipo">
+				<a href="index.html"><img src="imag/Theory.png" alt="Theory Logotipo"></a>
+			</figure>
+			<span class="burger-button fa fa-bars"  id="burger-button"></span>
+			<ul class="menus" id="menu">
+	<!--       		<li><a href="proyectos.html">Proyectos</a></li>	
+			    <li><a href="portafolio.html">Portafolio</a></li>-->
+			    <li><a href="index.html">Inicio</a></li>
+			    <li><a href="blog.html">Blog</a></li> 
+			    <li><a href="nosotros.html">Quien soy</a></li>
+	<!-- 		    <li><a href="contacto.html">Contacto</a></li> -->
+			</ul>
+		</header>
+	</section>
 
 
 	<article class="contenedor-pu">
-		<section class="fondo">
-			<div class="imagen-pu">
-				<img src="imag/ideas.png" width="1200" height="627">
-			</div>
+		<section class="encabezado">
+			<a href="index.html" class="logotipo-title"><strong>The Wels Theory</strong></a>
+			<ul class="icons">
+				<li>
+					<a href="https://twitter.com/Wels28" target="blank" class="icon fa-twitter">
+						<span class="label">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/Wels28" target="blank" class="icon fa-facebook">
+						<span class="label">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/Wels28" target="blank" class="icon fa-medium">
+						<span class="label">Medium</span>
+					</a>
+				</li>
+			</ul>
 		</section>
 		<div class="post-publicacion">
-			<h1>Ya tengo mi idea del millón!</h1>
+			<h1 style="color:#1F5768; font-size:2.5em">Ya tengo mi idea del millón!</h1>
 		</div>
 		<div class="titulo-c">
 			<div class="publicacion">
@@ -79,25 +91,45 @@
     	</div>
   	</footer>
 
-  	<!-- Script -->
 	<link rel="stylesheet" href="css/style.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  	<script>
+		var consulta = window.matchMedia('(max-width: 650px)');
+		consulta.addListener(mediaQuery);
 
-	<script>
+		var $burgerButton = document.getElementById('burger-button');
+		var $menu = document.getElementById('menu');
 
-	  WebFont.load({
+		function toggleMenu(){
+			$menu.classList.toggle('active')
+		};
 
-	    google: {
+		function showMenu(){
+			$menu.classList.add('active');
+		};
 
-	      families: ['Gochi Hand']
+		function hideMenu(){
+			$menu.classList.remove('active');
+		};
 
-	    }
+		function mediaQuery(){
+			if (consulta.matches) {
+				console.log('se cumplio la condición');
+				$burgerButton.addEventListener('touchstart',toggleMenu);
+			} 
+			else{
+				console.log('no se cumplio la condición');
+				$burgerButton.removeEventListener('touchstart',toggleMenu);	
+			}
+		}
+		mediaQuery();
+		//Gestos Touch
+		var $body = document.body;
 
-	  });
-
-	</script>
-
-  	<!-- ANALYTICS -->
+		var gestos = new Hammer($body);
+			gestos.on('swipeleft', hideMenu);
+			gestos.on('swiperight', showMenu);
+	</script>	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -106,6 +138,20 @@
 
 	  ga('create', 'UA-91664772-2', 'auto');
 	  ga('send', 'pageview');
+	</script>    
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+
+	  WebFont.load({
+
+	    google: {
+
+	      families: ['Kalam','Roboto Condensed']
+
+	    }
+
+	  });
+
 	</script>
   	
 </body>
