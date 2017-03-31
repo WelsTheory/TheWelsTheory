@@ -123,6 +123,10 @@ ul.icons {
 	display: flex;
 	justify-content: flex-end;
 }
+.comentarios{
+	display: flex;
+	max-width: 100%;
+}
 /* PORTADA */
 .portada{
 	height: 620px;
