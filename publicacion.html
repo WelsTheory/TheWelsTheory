@@ -67,16 +67,7 @@
 				<p>Hasta una nueva publicación.</p>
 			</div>
 		</div>
-		<div class="publicacion-fin">
-			<div class="publicacion-footer">
-				<h3>Categorias:</h3>
-				<a href="#Emprender"><p>Emprender</p></a>
-			</div>
-			<div class="publicacion-autor">
-				<h3>Autor:</h3>
-				<a href="autor.html">  William's Limonchi</a>
-			</div>
-		</div>
+		<div class="fb-comments" data-href="https://thewelstheory.com/publicacion" data-numposts="5"></div>
 	</article>
 
 	<!-- FOOTER -->
@@ -89,7 +80,24 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>	
   	<script>
+
 		var consulta = window.matchMedia('(max-width: 650px)');
 		consulta.addListener(mediaQuery);
 

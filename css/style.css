@@ -1,4 +1,4 @@
-@import url(font-awesome.css);
+@import url(min.font-awesome.css);
 /* GENERALES */
 body{
 	margin: 0;
@@ -75,6 +75,10 @@ ul.icons {
 					ul.icons li .icon:before {
 						font-size: 1.25em;
 					}
+.right{
+	display: flex;
+	justify-content: flex-end;
+	}
 /* ICONO DE MENU */
 
 .burger-button {
@@ -91,6 +95,32 @@ ul.icons {
 	z-index: 3;
 	color: #efefef;
 	display: none;
+}
+.button{
+	color: #FF9C3A; 
+	padding: 5px 12px;
+	cursor: pointer;
+	font-size: 18px;
+	text-decoration: none;
+	background: linear-gradient(to left,#3D5D67,#1F5768);
+}
+.categorias{
+	max-width: 100%;
+}
+.cat{
+	display: inline-block;
+	list-style: none;
+	font-size: 10px;
+	padding: 0;		
+}
+.cat li{
+	display: inline-block;
+	margin-right: 5px;
+	line-height: 50px;
+	margin-bottom: 5px;
+}
+.compartir{
+	margin-bottom: 1px solid #FF9C3A;
 }
 /* PORTADA */
 .portada{
