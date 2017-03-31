@@ -122,11 +122,6 @@ ul.icons {
 .compartir{
 	display: flex;
 	justify-content: flex-end;
-	line-height: 50px;
-}
-.comentarios{
-	display: flex;
-	max-width: 100%;
 }
 /* PORTADA */
 .portada{
