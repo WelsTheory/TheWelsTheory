@@ -120,7 +120,8 @@ ul.icons {
 	margin-bottom: 5px;
 }
 .compartir{
-	margin-bottom: 1px solid #FF9C3A;
+	display: flex;
+	justify-content: flex-end;
 }
 /* PORTADA */
 .portada{
