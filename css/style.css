@@ -121,7 +121,7 @@ ul.icons {
 }
 .compartir{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 /* PORTADA */
 .portada{

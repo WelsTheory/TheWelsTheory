@@ -63,30 +63,18 @@
 				<p>Hasta una nueva publicación.</p>
 			</div>
 		</div>
-		<div class="publicacion-autor">
-			<h3>Autor:</h3>
-			<a href="autor.html">  William's Limonchi</a>
+		<div class="categorias">
+			<ul class="cat">
+				<li><a href="index.html" class="boton">The Wels Theory</a></li>
+				<li><a href="index.html" class="boton">Emprender</a></li>
+				<li><a href="index.html" class="boton">The Wels Theory</a></li>
+				<li><a href="index.html" class="boton">The Wels Theory</a></li>
+				<li><a href="index.html" class="boton">The Wels Theory</a></li>
+			</ul>
 		</div>
-		<div class="publicacion-redes">
-			<h3>Sigueme en:</h3>
-				<ul class="icons">
-					<li>
-						<a href="https://twitter.com/Wels28" target="blank" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/Wels28" target="blank" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/Wels28" target="blank" class="icon fa-medium">
-							<span class="label">Medium</span>
-						</a>
-					</li>
-				</ul>
-			</div>
+		<div class="compartir">
+			<div class="fb-like" data-href="http://www.thewelstheory.com/publicacion.html" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+			<div><a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-hashtags="TheWelsTheory">Twittear</a></div>
 		</div>
 	</article>
 	
@@ -98,46 +86,17 @@
     	</div>
   	</footer>
 
-  	  	<!-- Script -->
-  	<link rel="stylesheet" href="css/style.min.css">
+  	<!-- SCRIPT -->
+	<link rel="stylesheet" href="css/style.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-	<script>
-		var consulta = window.matchMedia('(max-width: 650px)');
-		consulta.addListener(mediaQuery);
-
-		var $burgerButton = document.getElementById('burger-button');
-		var $menu = document.getElementById('menu');
-
-		function toggleMenu(){
-			$menu.classList.toggle('active')
-		};
-
-		function showMenu(){
-			$menu.classList.add('active');
-		};
-
-		function hideMenu(){
-			$menu.classList.remove('active');
-		};
-
-		function mediaQuery(){
-			if (consulta.matches) {
-				console.log('se cumplio la condición');
-				$burgerButton.addEventListener('touchstart',toggleMenu);
-			} 
-			else{
-				console.log('no se cumplio la condición');
-				$burgerButton.removeEventListener('touchstart',toggleMenu);	
-			}
-		}
-		mediaQuery();
-		//Gestos Touch
-		var $body = document.body;
-
-		var gestos = new Hammer($body);
-			gestos.on('swipeleft', hideMenu);
-			gestos.on('swiperight', showMenu);
-	</script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script src="css/min.main.js"></script>
+	<!--Me gusta -->
+	<div id="fb-root"></div>
+	<!-- Comentarios -->
+	<div id="fb-root"></div>
+	<!-- Twitter -->
+	<!-- Analytics -->
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -147,19 +106,5 @@
 	  ga('create', 'UA-91664772-2', 'auto');
 	  ga('send', 'pageview');
 	</script>    
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-	<script>
-
-	  WebFont.load({
-
-	    google: {
-
-	      families: ['Kalam','Roboto Condensed']
-
-	    }
-
-	  });
-
-	</script>
 </body>
 </html>
