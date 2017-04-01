@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>The Wels Theory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <style>@import "min.font-awesome.css";body{margin:0;background:#EFEFEF;font-family:'Roboto Condensed',sans-serif;display:flex;flex-direction:column;min-height:100vh}h1,p{color:#FF9C3A;font-family:'Kalam',cursive}</style>
+    <style>@import "css/min.font-awesome.css";body{margin:0;background:#EFEFEF;font-family:'Roboto Condensed',sans-serif;display:flex;flex-direction:column;min-height:100vh}h1,p{color:#FF9C3A;font-family:'Kalam',cursive}</style>
 </head>
 <body>
 	
@@ -128,6 +128,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 	<script src="css/min.main.js"></script>
 	<!-- Analytics -->
+	<script>
+		// Lazy loading
+		var bLazy = new Blazy({
+    		selector: 'img'// options
+		});
+	</script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

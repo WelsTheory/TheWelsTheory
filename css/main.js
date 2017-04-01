@@ -35,11 +35,6 @@
 		gestos.on('swipeleft', hideMenu);
 		gestos.on('swiperight', showMenu);
 
-	// Lazy loading
-		var bLazy = new Blazy({
-    		selector: 'img'// options
-		});
-
 	// ME GUSTA 
 	(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
